@@ -18,6 +18,7 @@
   "dependencies": {
     "@babel/plugin-transform-runtime": "7.9.0",
     "@babel/runtime": "7.9.2",
+    "@hapi/boom": "9.1.0",
     "@hapi/hapi": "19.1.1",
     "@hapi/inert": "6.0.1",
     "mysql": "2.18.1",

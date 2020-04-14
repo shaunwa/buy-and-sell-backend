@@ -1,3 +1,4 @@
+import Boom from '@hapi/boom';
 import { db } from '../database';
 
 export const updateListingRoute = {
@@ -15,8 +16,7 @@ export const updateListingRoute = {
             );
             return result;
         } catch (e) {
-            console.log(e);
-            return new Error(e);
+            return Boom.boomify(e, { statusCode: 500 });
         }
     },
 }
